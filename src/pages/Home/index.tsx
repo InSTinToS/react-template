@@ -1,11 +1,12 @@
 import React from 'react'
+import { Container } from './styles'
 
 import logo from 'assets/logo.svg'
 
 const Home = () => {
   return (
-    <div className='Home'>
-      <header className='App-header'>
+    <Container>
+      <header>
         <img src={logo} className='App-logo' alt='logo' width={300} />
 
         <h1>Hello World</h1>
@@ -15,7 +16,7 @@ const Home = () => {
           {process.env.REACT_APP_ENV_TEST}
         </h2>
       </header>
-    </div>
+    </Container>
   )
 }
 
