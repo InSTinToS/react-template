@@ -3,6 +3,8 @@ import { Container } from './styles'
 
 import logo from 'assets/logo.svg'
 
+import { Button } from 'react-bootstrap'
+
 const Home = () => {
   return (
     <Container>
@@ -15,6 +17,10 @@ const Home = () => {
           Env test (env variables needs to start with: REACT_APP_): <br />
           {process.env.REACT_APP_ENV_TEST}
         </h2>
+
+        <Button className='btn btn-success shadow-none text-light btn-lg'>
+          Hello React-Bootstrap
+        </Button>
       </header>
     </Container>
   )
