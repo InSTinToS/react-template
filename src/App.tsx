@@ -9,6 +9,11 @@ const App = () => {
         <img src={logo} className='App-logo' alt='logo' width={300} />
 
         <h1>Hello World</h1>
+
+        <h2>
+          Env test (env variables needs to start with: REACT_APP_): <br />
+          {process.env.REACT_APP_ENV_TEST}
+        </h2>
       </header>
     </div>
   )
