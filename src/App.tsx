@@ -5,7 +5,7 @@ import 'styles/bootstrap.scss'
 import GlobalStyle from 'styles/globalStyle'
 import theme from 'styles/theme'
 
-import Home from 'pages/Home'
+import Routes from 'routes'
 
 import { ThemeProvider } from 'styled-components'
 
@@ -13,7 +13,7 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
 
-    <Home />
+    <Routes />
   </ThemeProvider>
 )
 
